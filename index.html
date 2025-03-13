@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Claim Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Update ethers.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+</head>
+<body>
+    <h1 class="portal-title">Token Claim Portal</h1>
+    <button id="connectWallet" class="connect-btn">Connect Wallet</button>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="token-info">
+                    <h2>Total amount to be claimed</h2>
+                    <div class="balance">1,000,000 TKN</div>
+                </div>
+                <div class="claim-form">
+                    <div class="claim-amount"><span class="token-amount">100 TKN</span></div>
+                    <button id="claimButton" disabled>Claim Tokens</button>
+                </div>
+                <div class="status" id="status"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Move script.js to end of body -->
+    <script src="script.js"></script>
+</body>
+</html>
